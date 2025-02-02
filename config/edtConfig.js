@@ -6,9 +6,9 @@ async function connectToDatabase() {
   try {
     await oracledb.initOracleClient({ libDir: 'C:\\instantclient_23_4' });
     connection = await oracledb.getConnection({
-      user: 'scoemploi2',
-      password: 'scoemploi2',
-      connectString: '192.168.3.13:1521/bdesp10n'
+      user: '***********',
+      password: '***********',
+      connectString: '**********/********'
     });
     console.log('Successfully connected to remote Oracle Database');
     return connection;
